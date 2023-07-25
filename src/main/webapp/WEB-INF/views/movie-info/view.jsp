@@ -12,27 +12,36 @@
 	<table border="1">
 		<tr>
 			<th>번호</th>
-			<td>${userInfo.uiNum}</td>
+			<td>${movieInfo.miNum}</td>
 		</tr>
 		<tr>
-			<th>이름</th>
-			<td>${userInfo.uiName}</td>
+			<th>제목</th>
+			<td>${movieInfo.miTitle}</td>
 		</tr>
 		<tr>
-			<th>아이디</th>
-			<td>${userInfo.uiId}</td>
+			<th>설명</th>
+			<td>${movieInfo.miDesc}</td>
 		</tr>
 		<tr>
-			<th>비번</th>
-			<td>${userInfo.uiPwd}</td>
+			<th>장르</th>
+			<td>${movieInfo.miGenre}</td>
 		</tr>
+		<tr>
+			<th>개봉일</th>
+			<td>${movieInfo.miCredat}</td>
+		</tr>
+		<tr>
+			<th>관객수</th>
+			<td>${movieInfo.miCnt}</td>
+		</tr>
+		
 		<tr>
 			<th colspan="2">
-				<button onclick="location.href='/user-info/update?uiNum=${userInfo.uiNum}'" type="button">수정</button>
+				<button onclick="location.href='/movie-info/update?uiNum=${movieInfo.uiNum}'" type="button">수정</button>
 				<button>삭제</button>
 			</th>
 		</tr>
 	</table>
 </form>
 </body>
-</html>
+</html>s
